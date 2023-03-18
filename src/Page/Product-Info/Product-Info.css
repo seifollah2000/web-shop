@@ -1,0 +1,50 @@
+.box_img-product img {
+  cursor: crosshair;
+}
+.property_product ul li {
+  font-size: 1rem;
+  color: #838080;
+}
+.property_product ul li span {
+  font-size: 1.05rem;
+  color: var(--dark);
+  font-weight: bolder;
+}
+.titleProduct h6 {
+  font-size: 1.1rem;
+}
+.pointOfView span {
+  font-size: 0.9rem;
+}
+.pointOfView svg {
+  font-size: 1.3rem;
+}
+.them-product span {
+  font-size: 1.2rem;
+}
+.them_blue,
+.them_red,
+.them_pink,
+.them_yellow {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  border: 5px double var(--white);
+}
+.them_blue {
+  background-color: blue;
+}
+.them_red {
+  background-color: red;
+}
+.them_pink {
+  background-color: pink;
+}
+.them_yellow {
+  background-color: yellow;
+}
+.them_active {
+  box-shadow: 0 0 0 6px #3333e1;
+}

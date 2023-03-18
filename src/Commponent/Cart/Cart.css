@@ -15,7 +15,6 @@
   flex-wrap: wrap;
   align-content: space-between;
 }
-
 .active {
   right: 0;
   opacity: 1;
