@@ -1,0 +1,67 @@
+.bag-sidebar {
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 400px;
+  height: 103vh;
+  background-color: var(--white);
+  padding: 20px;
+  z-index: 99999;
+  overflow-y: auto;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.active {
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.bag-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.close-icon {
+  cursor: pointer;
+}
+
+.bag-title {
+  background-color: var(--dark);
+  color: var(--main-red);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  width: 100%;
+}
+.Cart_product {
+  position: relative;
+  transition: all 600ms ease !important;
+}
+.removeProductCart {
+  position: absolute;
+  z-index: 4;
+  font-size: 2rem;
+  right: 0.7rem;
+}
+.btn_buy {
+  background-color: var(--main-red) !important;
+  color: var(--white) !important;
+  font-size: 1.32rem !important;
+  transition: all 300ms ease-in-out !important;
+  border: 2px solid var(--main-red) !important;
+}
+.btn_buy:hover {
+  color: var(--main-red) !important;
+  background-color: var(--white) !important;
+}
+
+@media screen and (max-width: 450px) {
+  .bag-sidebar {
+    width: 100%;
+  }
+}

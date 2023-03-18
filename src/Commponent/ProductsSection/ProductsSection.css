@@ -1,0 +1,95 @@
+.card{
+    border-radius: 1rem;
+    background-color: var(--white);
+    box-shadow:  5px 5px 10px 10px rgba(0, 0, 0, .3);
+    transition: all 400ms ease;
+}
+
+.grouping_title{
+    position: relative;
+}
+.grouping_title::after{
+    content: 'WebShop';
+    width: 100%;
+    height: 60%;
+    background-color: var(--main-red);
+    position: absolute;
+    z-index: -2;
+    opacity: .5;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    color: #b57878;
+    right: 0;
+    animation-name: anAfter;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    top: -7px;
+}
+.grouping_title::before{
+    content: '';
+    
+    height: 6%;
+    background-color: var(--main-red);
+    position: absolute;
+    z-index: -2;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    color: var(--bs-body-bg);
+    left: 0;
+    bottom: -3px;
+    animation-name:anBefore;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes anAfter {
+    form{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes anBefore {
+    form{
+        width: 0%;
+        opacity: 0;
+    }
+    to{
+        width: 100%;
+        opacity: 1;
+    }
+}
+.card:hover{
+    border:1px groove rgba(0, 0, 0,.5) ;
+}
+.card-text{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+.price{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+.price_text{
+    background: var(--dark);
+    color: var(--white);
+    padding: 3px 8px ;
+    border-radius: 3px;
+    display:block ;
+    width: fit-content;
+    
+}
+.number{
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: monospace;
+    border-radius: .5rem;
+    padding: .3rem .6rem;
+    display: block;
+    margin-top: 1rem;
+}
