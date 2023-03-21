@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from 'react'
+import React, { useContext, useState, useRef, useEffect } from 'react'
 import './Header.css'
 import { BsBag } from 'react-icons/bs'
 import { ProductContext } from '../../Context/ContextProduct'
@@ -79,7 +79,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className='modal_menu-list'>
-                  <Link to='/category/tv' className='modal_menu-link'>
+                  <Link to='/category/television' className='modal_menu-link'>
                     TV
                   </Link>
                 </li>

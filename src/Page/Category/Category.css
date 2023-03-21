@@ -1,0 +1,58 @@
+.topCatery_top {
+  box-shadow: 0 0 10px -3px;
+  border-radius: 0.5rem;
+}
+.MuiSvgIcon-root {
+  color: var(--main-red);
+}
+.MuiTabs-flexContainer,
+.css-heg063-MuiTabs-flexContainer {
+  background-color: var(--dark);
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: var(--white);
+}
+.MuiButtonBase-root,
+.MuiTab-root,
+.MuiTab-textColorPrimary,
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  color: var(--main-red) !important;
+  background-color: var(--dark) !important;
+}
+.MuiTabs-root,
+.css-tkn350-MuiTabs-root {
+  background-color: var(--dark);
+  border-radius: 0.5rem;
+}
+.category_search {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--dark);
+  border-radius: 0.5rem;
+}
+
+.category_search-input {
+  font: inherit;
+  padding: 0.2rem 0.4rem;
+  outline: none;
+  border: none;
+  color: var(--white);
+  background-color: var(--dark);
+}
+.category_search > svg {
+  font-size: 1.5rem;
+  color: var(--main-red);
+  cursor: pointer;
+}
+.css-1aquho2-MuiTabs-indicator {
+  background-color: var(--main-red) !important;
+}
+.css-1y7coo4-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  color: var(--dark) !important;
+  background-color: var(--main-red) !important;
+}
+.css-wjh20t-MuiPagination-ul {
+  justify-content: center !important;
+}
