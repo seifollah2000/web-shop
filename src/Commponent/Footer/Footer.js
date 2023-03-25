@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
 import { BsInstagram } from 'react-icons/bs'
@@ -7,7 +7,7 @@ import { ImWhatsapp } from 'react-icons/im'
 import { MdEmail } from 'react-icons/md'
 import { MdPhone } from 'react-icons/md'
 
-export default function Footer() {
+const Footer = memo(() => {
   return (
     <>
       <div className='footer row '>
@@ -38,10 +38,10 @@ export default function Footer() {
 
         <div className='contactUs col-md-3 col-ms-6 mt-md-5'>
           <h6 className='footer_title'>contact Us</h6>
-          <div className="contact_icon w-50 d-flex mt-5">
-            <BsInstagram />
-            <FaTelegram />
-            <ImWhatsapp />
+          <div className="contact_icon row mt-5">
+            <BsInstagram className='col-3' />
+            <FaTelegram className='col-3' />
+            <ImWhatsapp className='col-3' />
           </div>
           <div className="contact_email d-flex my-3 align-items-center">
             <MdEmail />
@@ -59,4 +59,5 @@ export default function Footer() {
       </div>
     </>
   )
-}
+})
+export default Footer

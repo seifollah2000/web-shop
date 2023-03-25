@@ -44,8 +44,9 @@
 .contact_phone svg,
 .contact_email svg,
 .contact_icon svg {
-  font-size: 2rem;
-  margin: 0 1rem;
+  font-size: 1.7rem;
+  margin: 0;
+  padding: 0;
   color: var(--main-red);
   cursor: pointer;
 }
@@ -57,10 +58,18 @@
   text-decoration: none;
   font-size: 1.3rem;
 }
+.contact_icon > svg {
+  width: 18%;
+}
 /* ! Responsive */
 
-@media screen and(max-width:768px) {
+@media screen and (max-width: 768px) {
   .footer {
-    padding: 2rem 0.5rem;
+    padding: 2rem 1.5rem !important;
+  }
+}
+@media screen and (max-width: 968px) {
+  .footer {
+    padding: 2rem 3rem !important;
   }
 }

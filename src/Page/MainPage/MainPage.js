@@ -4,6 +4,7 @@ import Cart from '../../Commponent/Cart/Cart'
 import Header from '../../Commponent/Header/Header'
 import Footer from '../../Commponent/Footer/Footer'
 export default function MainPage() {
+
   return (
     <div>
       <Header />

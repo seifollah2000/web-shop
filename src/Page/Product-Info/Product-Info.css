@@ -1,5 +1,6 @@
 .box_img-product img {
   cursor: crosshair;
+  width: 75%;
 }
 .box_zoom {
   position: absolute;
@@ -11,6 +12,7 @@
   left: 44%;
   transition: all 200ms ease;
   overflow: hidden;
+  border-radius: 1rem;
   background-color: var(--white);
 }
 .box_img-product-zoom {
@@ -30,7 +32,7 @@
   visibility: hidden;
   opacity: 0;
   top: 60px;
-  left: 40px;
+  left: 30px;
   border-radius: 0.5rem;
   pointer-events: none;
   z-index: 2;
@@ -117,4 +119,22 @@
 }
 .send_product svg {
   font-size: 1.4rem;
+}
+/* ! Responsive */
+
+@media screen and (max-width: 776px) {
+  .box_img-product {
+    padding: 1rem 0;
+  }
+  .box_img-product > img {
+    cursor: pointer;
+
+    width: 100%;
+  }
+  .box_zoom {
+    display: none !important;
+  }
+  .muoseMove {
+    display: none !important;
+  }
 }

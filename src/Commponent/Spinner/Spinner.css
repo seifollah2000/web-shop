@@ -1,0 +1,12 @@
+.spinner {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100% !important;
+  z-index: 9999;
+  height: 100vh;
+  left: 0;
+}
+.spinner-border {
+  position: fixed;
+}
