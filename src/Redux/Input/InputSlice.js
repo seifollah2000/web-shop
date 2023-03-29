@@ -1,6 +1,17 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-
+function shared(nameItem, state, action) {
+    let newTilte = {
+        [nameItem]: action.payload.title
+    }
+    if (state.value.length === 0) {
+        state.value.push(newTilte)
+    } else {
+        state.value.map(item => {
+            item[nameItem] = action.payload.title
+        })
+    }
+}
 // reducer
 
 const initialState = {
@@ -10,58 +21,21 @@ const initialState = {
 
 
 function nameInput(state, action) {
-    let newTilte = {
-        name: action.payload.title
-    }
-    if (state.value.length === 0) {
-        state.value.push(newTilte)
-    } else {
-        state.value.map(item => {
-            item.name = action.payload.title
-        })
-    }
+    shared('name', state, action)
 }
 
 function nameUserInput(state, action) {
-    let newTilte = {
-        userName: action.payload.title
-    }
-    if (state.value.length === 0) {
-        state.value.push(newTilte)
-    } else {
-        state.value.map(item => {
-            item.UserName = action.payload.title
-        })
-    }
+    shared('userName', state, action)
 }
 
 function emailInput(state, action) {
-    let newTilte = {
-        email: action.payload.title
-    }
-    if (state.value.length === 0) {
-        state.value.push(newTilte)
-    } else {
-        state.value.map(item => {
-            item.email = action.payload.title
-        })
-    }
 
-
+    shared('email', state, action)
 }
 
 function passwordInput(state, action) {
-    let newTilte = {
-        password: action.payload.title
-    }
-    if (state.value.length === 0) {
-        state.value.push(newTilte)
-    } else {
-        state.value.map(item => {
-            item.password = action.payload.title
-        })
-    }
 
+    shared('password', state, action)
 }
 
 

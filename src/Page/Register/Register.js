@@ -6,9 +6,12 @@ import Input from '../../Commponent/Input/Input'
 import './Register.css'
 import { Person } from '@mui/icons-material';
 import { Link } from 'react-router-dom'
-
+import { useSelector, useDispatch } from 'react-redux'
+import { emailInputAction, passwordInputAction, nameInputAction, nameUserInputAction } from '../../Redux/Input/InputSlice'
 
 export default function Register() {
+    const dispatch = useDispatch()
+    const stateInput = useSelector(state => state)
     const clickHandler = () => {
 
     }
