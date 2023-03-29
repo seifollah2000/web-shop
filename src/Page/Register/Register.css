@@ -1,0 +1,84 @@
+.register_body {
+  width: 100%;
+}
+
+.register {
+  position: relative;
+  margin: 4rem auto;
+  width: 30%;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 15px -4px;
+  border-radius: 0.7rem;
+  background-color: #fff;
+  border: 4px double var(--main-red);
+}
+.register::after {
+  content: "";
+  width: 100%;
+  height: 9%;
+  position: absolute;
+  z-index: -50;
+  background-color: var(--main-red);
+  left: 0;
+  border-radius: 7rem;
+  bottom: -26px;
+}
+.register::before {
+  content: "";
+  width: 100%;
+  height: 9%;
+  position: absolute;
+  background-color: var(--dark);
+  z-index: -50;
+  left: 0;
+  border-radius: 7rem;
+  top: -22px;
+}
+.register > h3 {
+  width: fit-content;
+  margin: 1rem auto;
+  font-size: xx-large;
+}
+.input_text {
+  width: 100%;
+}
+.register > button {
+  width: 50%;
+  padding: 0.7rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+.go-page-login {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.go-page-login > span {
+  color: #9b9b9b;
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .register {
+    width: 40%;
+    margin: 4rem auto;
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .register {
+    width: 50%;
+    margin: 4rem auto;
+    padding: 1rem 0.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .register {
+    width: 90%;
+  }
+}

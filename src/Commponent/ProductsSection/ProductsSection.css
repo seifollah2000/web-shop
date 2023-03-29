@@ -24,6 +24,7 @@
   animation-duration: 3s;
   animation-fill-mode: forwards;
   top: -7px;
+  text-align: center;
 }
 .grouping_title::before {
   content: "";
@@ -31,7 +32,7 @@
   height: 6%;
   background-color: var(--main-red);
   position: absolute;
-  z-index: -2;
+  z-index: 0;
   border-radius: 0.2rem;
   font-size: 1rem;
   color: var(--bs-body-bg);

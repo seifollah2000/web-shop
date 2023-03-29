@@ -21,6 +21,13 @@
 .nav-item .nav-link {
   color: var(--main-white) !important;
 }
+.user_link {
+  margin-right: 1rem;
+}
+.user_link > svg {
+  color: var(--main-red);
+  font-size: 1.3rem;
+}
 .bag {
   position: relative;
   display: flex;

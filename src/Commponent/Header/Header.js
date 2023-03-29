@@ -7,6 +7,8 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import ModalMenu from '../ModalMenu/ModalMenu'
 import { FaSearch } from 'react-icons/fa'
 import { MdClose } from 'react-icons/md'
+import { FaUserAlt } from 'react-icons/fa'
+
 const Header = memo(() => {
   const [showMenus, setShowMenus] = useState(false)
   const showcard = useContext(ProductContext)
@@ -48,7 +50,10 @@ const Header = memo(() => {
               </Link>
             </li>
           </ul>
-          <div className='bag-box'>
+          <div className='bag-box d-flex'>
+            <Link to='/login' className='user_link' title='login'>
+              <FaUserAlt />
+            </Link>
             <a href='#' className='bag' onClick={e => showcard.setIsShowCart(true)}>
               <BsBag className="text-white" />
               <span className='bag-products-counter'>{showcard.userCart.length}</span>
