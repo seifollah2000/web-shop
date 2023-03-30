@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 
 export default function ScrollTop() {
     const { pathname } = useLocation()
@@ -10,5 +11,10 @@ export default function ScrollTop() {
             behavior: 'instant'
         })
     }, [pathname])
-    return null
+    console.log(pathname)
+    return (
+        <Helmet>
+            <title>{pathname === '/' ? 'Web Shop' : 'Web shop' + pathname}</title>
+        </Helmet>
+    )
 }

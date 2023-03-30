@@ -14,6 +14,7 @@ import { ProductContext } from '../../Context/ContextProduct';
 import { useParams } from 'react-router-dom';
 import Spinners from '../../Commponent/Spinner/Spinners';
 
+
 export default function Category() {
 
   const getCategory = useParams()
@@ -79,6 +80,7 @@ export default function Category() {
 
   return (
     <>
+
       {
         shownSpinner ? (
           <Spinners />
@@ -105,8 +107,11 @@ export default function Category() {
                   </Tabs>
                 </Box>
 
-                <div className='category_search d-flex'>
+                <div className='category_search '>
                   <input type='text' placeholder='search Product....' className='category_search-input' />
+                  <BiSearch />
+                </div>
+                <div className='category_search-phone'>
                   <BiSearch />
                 </div>
               </div>

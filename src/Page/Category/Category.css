@@ -46,6 +46,19 @@
   color: var(--main-red);
   cursor: pointer;
 }
+.category_search-phone {
+  width: 2.5rem;
+  height: 2.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--main-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category_search-phone > svg {
+  color: var(--main-red);
+  font-size: 1.7rem;
+}
 .css-1aquho2-MuiTabs-indicator {
   background-color: var(--main-red) !important;
 }
@@ -55,4 +68,20 @@
 }
 .css-wjh20t-MuiPagination-ul {
   justify-content: center !important;
+}
+
+/* ! Responsive */
+@media screen and (max-width: 768px) {
+  .category_search {
+    display: none !important;
+  }
+  .category_search-phone {
+    display: flex !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .category_search-phone {
+    display: none !important;
+  }
 }

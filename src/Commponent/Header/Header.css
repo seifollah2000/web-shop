@@ -7,8 +7,33 @@
   display: flex;
   flex-direction: row !important;
 }
+
 .nav-item {
   margin: 0 1rem;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  height: 4%;
+  background-color: var(--main-red);
+}
+.nav-link:hover.nav-link::after {
+  animation-name: navLink;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+@keyframes navLink {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 .navbar-brand:hover {
   color: var(--main-red) !important;

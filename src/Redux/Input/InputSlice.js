@@ -1,10 +1,10 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 function shared(nameItem, state, action) {
-    let newTilte = {
-        [nameItem]: action.payload.title
-    }
     if (state.value.length === 0) {
+        let newTilte = {
+            [nameItem]: action.payload.title
+        }
         state.value.push(newTilte)
     } else {
         state.value.map(item => {
